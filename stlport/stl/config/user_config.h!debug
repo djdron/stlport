@@ -49,9 +49,9 @@
  * in STLport iostreams mode, namespace customization guaranty that you
  * link to the right library.
  */
-/*
+
 #define _STLP_DEBUG 1
-*/
+
 /*
  * You can also choose the debug level:
  * STLport debug level: Default value
@@ -63,15 +63,15 @@
  */
 /*
 #define   _STLP_DEBUG_LEVEL _STLP_STLPORT_DBG_LEVEL
-#define   _STLP_DEBUG_LEVEL _STLP_STANDARD_DBG_LEVEL
 */
+#define   _STLP_DEBUG_LEVEL _STLP_STANDARD_DBG_LEVEL
 /* When an inconsistency is detected by the 'safe STL' the program will abort.
  * If you prefer an exception define the following macro. The thrown exception
  * will be the Standard runtime_error exception.
  */
-/*
+
 #define _STLP_DEBUG_MODE_THROWS
- */
+
 
 /*
  * _STLP_NO_CUSTOM_IO : define this if you do not instantiate basic_xxx iostream
@@ -136,10 +136,10 @@
  * with _STLP_SHRED_BYTE (see below).
  * Note : _STLP_DEBUG and _STLP_DEBUG_ALLOC don't set this option automatically.
  */
-/*
+
 #define _STLP_DEBUG_UNINITIALIZED 1
 #define _STLP_DEBUG_ALLOC 1
-*/
+
 
 /*
  * Uncomment and provide a definition for the byte with which raw memory

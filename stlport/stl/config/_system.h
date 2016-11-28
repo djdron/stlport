@@ -135,6 +135,9 @@
 #    include <stl/config/_gcc.h>
 #  endif
 #  include <stl/config/_windows.h>
+#elif defined (_XBOX)
+#  include <stl/config/_msvc.h>
+#  include <stl/config/_xbox360.h>
 #elif defined (_WIN32) || defined (__WIN32) || defined (WIN32) || defined (__WIN32__) || \
       defined (__WIN16) || defined (WIN16) || defined (_WIN16)
 #  if defined ( __BORLANDC__ )  /* Borland C++ / CodeGear C++ */

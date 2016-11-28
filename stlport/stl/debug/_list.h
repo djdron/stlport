@@ -379,7 +379,8 @@ public:
     else
 #endif
       // Std: 23.2.2.4:7
-      __x._Invalidate_iterator(__i);
+	  if(&__x != this)
+	      __x._Invalidate_iterator(__i);
   }
 
   void splice(iterator __pos, _Self& __x, iterator __first, iterator __last) {
@@ -392,7 +393,8 @@ public:
     else
 #endif
       // Std: 23.2.2.4:12
-      __x._Invalidate_iterators(__first, __last);
+	  if(&__x != this)
+		__x._Invalidate_iterators(__first, __last);
     _M_non_dbg_impl.splice(__pos._M_iterator, __x._M_non_dbg_impl, __first._M_iterator, __last._M_iterator);
   }
 

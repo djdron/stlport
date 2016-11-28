@@ -32,7 +32,7 @@ struct _exception;
 #  if defined (_STLP_HAS_INCLUDE_NEXT)
 #    include_next <setjmp.h>
 #  else
-#    include _STLP_NATIVE_C_HEADER(setjmp.h)
+#    include _STLP_NATIVE_HEADER(setjmp.h)
 #  endif
 #endif
 

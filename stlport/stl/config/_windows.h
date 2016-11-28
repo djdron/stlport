@@ -288,4 +288,8 @@ void* _STLP_CALL STLPInterlockedExchangePointer(void* volatile* __a, void* __b) 
 #  define _STLP_LDOUBLE_80
 #endif
 
+#if _MSC_VER >= 1900 // Visual Studio 2015 ucrt
+#define _STLP_NATIVE_C_INCLUDE_PATH ../ucrt
+#endif
+
 #endif /* _STLP_INTERNAL_WINDOWS_H */
