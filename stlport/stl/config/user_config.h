@@ -194,9 +194,9 @@
  * If you are using new PSDK with VC++ 6.0 or lower,
  * please define this to get correct prototypes for InterlockedXXX functions
  */
-/*
+
 #define _STLP_NEW_PLATFORM_SDK 1
-*/
+
 
 /*
  * For the same reason as the one above we are not able to detect easily use
