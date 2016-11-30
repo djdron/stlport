@@ -36,7 +36,7 @@
 #  define _STLP_NO_MEMBER_TEMPLATE_KEYWORD
 #endif
 
-#if !defined (_REENTRANT) && (defined (_THREAD_SAFE) || \
+#if !defined(_STLP_NO_THREADS) && !defined (_REENTRANT) && (defined (_THREAD_SAFE) || \
                              (defined (__OpenBSD__) && defined (_POSIX_THREADS)) || \
                              (defined (__MINGW32__) && defined (_MT)))
 #  define _REENTRANT
