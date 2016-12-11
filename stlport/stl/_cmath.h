@@ -545,6 +545,8 @@ using ::fabs;
 using ::floor;
 using ::fmod;
 using ::frexp;
+using std::isnan;
+using std::isinf;
 /*
    Because of some weird interaction between STLport headers
    and native HP-UX headers, when compiled with _STLP_DEBUG
