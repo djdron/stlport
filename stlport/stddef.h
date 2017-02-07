@@ -20,7 +20,7 @@
 #  define _STLP_DONT_POP_HEADER_ID
 #endif
 
-#if defined (_MSC_VER) || defined (__DMC__)
+#if defined (_MSC_VER) || defined (__DMC__) || defined(__MINGW32__)
 /* Native stddef.h contains errno macro definition making inclusion of native
  * errno.h in STLport errno.h impossible. We are then forced to include errno.h
  * first.
